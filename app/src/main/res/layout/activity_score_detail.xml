@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -6,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RankingFragment"
+    android:background="@drawable/tlo"
     >
 
     <android.support.v7.widget.CardView
@@ -16,7 +18,7 @@
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/colorPrimaryDark"
         app:cardElevation="4dp">
-        
+
         <LinearLayout
             android:background="#87bdd8"
             android:orientation="horizontal"
@@ -25,8 +27,8 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            
-            
+
+
             <TextView
                 android:text="Nazwa"
                 android:textColor="@android:color/white"
@@ -47,7 +49,7 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rankingList"
+        android:id="@+id/scoreList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/title">
